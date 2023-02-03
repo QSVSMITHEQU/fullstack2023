@@ -14,31 +14,28 @@
         padding: 8px 16px;
         width:100%;
         background: #2ddf5c;
-    
 
     }
-   /* |header{
-         
-         display: inline-block;
-        padding: 8px 16px;
-        width:100
-     } */
+  
 
-    h1.main-header_brand {
+    h1.main-header_brand > div {
         font-weight:bold; 
         font-size: 22px; 
-      
+        vertical-align:middle;
+        display:inline-block
+
     }
 
     *{ 
     font-family: 'Nunito', sans-serif;
-    ;
     }
 
     nav.main-nav {
          display:inline-block;
          width:calc(100%-63px);
-         text-align: right
+         text-align: right;
+         vertical-align:middle
+
         } 
 
      ul.main-nav_items
@@ -47,11 +44,16 @@
          margin: 0;
          padding: 0;
         list-style:none;
+        vertical-align:middle;
      }
    
      li.main-nav_item {
-         display:inline-block
-
+        display: inline-block;
+         display:inline-block;
+         vertical-align:middle;
+         color: #0e4f1f;
+         font-size: 1.875em
+         font-weight: bold; 
      }
 
      </style>
@@ -60,7 +62,7 @@
 <body>
     <div> 
     <header class="main-header"> 
-         <!-- <img src="../img/meta_eyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ==.webp" alt="logo del banco"> --> 
+         <!-- <img src="../img/meta_eyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ==.webp" alt="logo del banco"> the heritary doesnt change the a, the heritage from the ul. --> 
         <h1 class="main-header_brand"> Banco</h1>
     </div>
     <nav class="main-nav">
