@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        background-color: blue;
+        }
+        .flex-container > div {
+        background-color: red;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+        </style>
+        
+
+</head>
+<body>
+<div class="flex-container">
+    <div style="order:3">1</div>
+    <div style="order:4">2</div>
+    <div style="order:5">3</div>
+    <div style="order:6">4</div>
+    <div style="order:7">5</div>
+    <div style="order:8">6</div>
+    <div style="order:9">7</div>
+    <div style="order:10">8</div>
+    <div style="order:11">9</div>
+    <div style="order:12">10</div>
+    <div style="order1">11</div>
+    <div style="order2">12</div>
+</div>
+<!-- flex grow an asign a number to an element, to state how much space you want it to take up
+in proportion to the other elements-->
+<!-- shrink 2, make smaller if the screen gets smaller, shrink 0, means if the screen gets smaller do not change the size of this element.  -->
+<!-- flex basis, if there is enough space put the element in 500px, but if the browser is made smaller there may be a shift in the size of that element, it's flexible not absolute-->
+<!-- property flex combines flex grow, flex shrink and flex basis flex: 0 0 200px when the screen is big apply the glex grow, when the screen is small apply the shrink so the browser, these elements are responsive.-->
+<!-- align-self, organise an element in a different way to hte other ones: align-self: center, the other ones by default have the property stretch-->
+<!--pseudo-clases, pseudo, a:link, a:hover, a: visited, a:active clicking on link different stages, the color changes, h1: hover, when you put mouse on top then the colors included in teh style of this show up
+    p:first child; only the first paragraph gets the property you put in the style. 
+    p i: first child, only the first italic word in the paragraph will be italic, in the next paragraph the same
+    p:first child: i, only format the italics in teh first paragraph, in this case all of the italics in the paragraph. 
+    a target : links with target inside get the attribute specified in the head 
+</body>
+</html

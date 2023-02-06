@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Hello world! en una ventana, like a little alert");
+        document.write("Hello world! escrito literal en el body of the webpage");
+        console.log("Hello world! en la consola like the code");
+
+ <!--external java script-->  
+ <!-- index.html -->
+<script src="main1.js">WILL LISTEN TO SOURCE, CODE PUT IN HERE WILL BE IGNORED</script>
+
+
+<!--link to my own javascript page primer actual saved .js-->
+<script src="primeractual2.js"></script>
+    </script>
+
+<!-- event, funtion an action. here the elemeents in html with the id demo, that paragraph/text will be replaced with parrafo cambiado, innerHTML means the java is changing/editing an html element, in this case the elements of html with the id demo are being edited by java -->
+<script>
+    function myFunction() {
+    document.getElementById("demo").innerHTML = "Párrafo cambiado";
+    }
+    </script>
+</body>
+</html>
