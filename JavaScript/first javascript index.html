@@ -27,5 +27,59 @@
     document.getElementById("demo").innerHTML = "Párrafo cambiado";
     }
     </script>
+----
+<p id="demo"></p> 
+<!--a hello will appear, demo will be replaced well not replaced in this case, and an hola will be placed, place id before the script, orden script matters, read the id before the script-->
+<script>
+document.getElementById("demo").innerHTML = "hola";
+</script>
+
+<script>
+    // correcto
+    const nombre = "Alejandro";
+    function saludar() {
+    document.write(nombre);
+    }
+    // error porque Javascript interpretaría:
+    // const nombre = "Alejandro" (function saludar() {console.log('Hola'); })()
+    const nombre = "Alejandro"
+    (function saludar() {
+    document.write("Hola");
+    })();
+    // para evitarlo se añade el punto y coma
+
+    const nombre = "Alejandro";
+    (function saludar() {
+    document.write("Hola");
+    })();
+
+    const nombre = prompt("Escriba su nombre", "Escriba aquí");
+    console.log (nombre);
+
+    const conf = confirm("Sí o no");
+    // true o false
+    console.log(conf);
+
+
+// x está indefinido (undefined)
+let x;
+// ahora x es un número
+x = 5;
+// ahora x es un string
+x = 'John';
+
+    </script>
+
+<!-- declare the value, then after you can define it-- LET X -->
+
+<!-- you create a value: nombre/conf, which will then be repaced by what the client adds, variable nombre saves what they write in the Escriba su nombre box-->
+
+<!--create variables at the top -->
+const person = 'John Doe', carName = 'Volvo', price = 200;
+
+
+
+
 </body>
 </html>
+
