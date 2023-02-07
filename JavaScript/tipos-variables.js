@@ -66,7 +66,7 @@ const array5 = new Array(null, undefined, '', 8) //4 variables in this array
 const array7=new array [Med, juan]
 console.log(arrag2[2]) //position two of the array which does not exist shows me the second element in teh array 2 (20, 3, 8)
 
-to define a new array const array4=new array (20,3,8)
+new array array4=new array (20,3,8)
 
 array2 [2] =13 ;
 console.log(array2[2]); //you just changed the second value in the line, to 13, in array two it will show the value of that position is 13 now. 
@@ -208,8 +208,12 @@ const v1 = "3"; //text to convert to a string
 const v2 = 13 //number to convert to a string
 const v3 = true //boleano to convert to a string
 
+
+
 console.log(parseInt (v1));//v1 is a string to a number
 console.log(v2.toString()); //v2 is a number to a string
 console.log(Boolean(v3)); //v3 is a boleano to a string
 
 
+let name = ''
+console.log(prompt(name))
