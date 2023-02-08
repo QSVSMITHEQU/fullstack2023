@@ -154,4 +154,33 @@ switch (month) {
     break;   
 }
 
+//50 al 1
+//example 
+for (let i = 0; i < 5; i++) {
+    // 0, 1, 2, 3, 4 (en distintas líneas)
+    console.log(i);
+    }
+    const array = ['En', 'un', 'lugar', 'de', 'la', 'mancha'];
+    const len = array.length;
+    // recorre un array mediante un for clásico
+    for (let i = 0; i < len; i++) {
+    // En, un, lugar, de, la, mancha (en distintas líneas)
+    console.log(array[i]);
+
 // console.log("es un bonito" + dia "de " +month)
+    }
+
+// buccle from 1-50 incremento
+for(let i=1; i<=50; i++) {
+    console.log(i);
+}
+
+// buccle from 50-1 decremento //greater or equal to one = i>=1
+for(let i=50; i>=1; i--) {
+    console.log(i);
+}
+        
+//next ex
+for(let i=0; <=10; i++) {
+    document.write("5 x" +i+ " = " +i*5+"<br>" ) //skip a line, timsing 5 x i (up to 10) and you get 5 multiples until 5 times 10. text what will show,  multiply, 5 x (number 1-10 =i)=
+}
