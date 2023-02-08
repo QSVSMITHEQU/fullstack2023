@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-   
-    <!-- <script src="../JavaScript/tipos-variables.js"></script> -->
+    <script src="../JavaScript/tipos_variables2.js"></script>
+     <script src="../JavaScript/tipos-variables.js"></script> -->
     <script>
         //marc's version
 const v1 = "3"; //text to convert to a string
@@ -19,16 +19,107 @@ console.log(parseInt (v1));//v1 is a number converted to a string
 console.log(v2.toString()); //v2 is a 
 console.log(Boolean(v3));
 
-let name = "Smith";
-console.log(prompt(name))
+// number
+console.log(typeof 3);
+// number
+console.log(typeof NaN);
+// number
+console.log(typeof parseInt('hola'));
+// string
+console.log(typeof 'hola');
+// boolean
+console.log(typeof true);
+// function
+console.log(typeof function() {});
+// object
+console.log(typeof {foo: 'bar'});
+// object
+console.log(typeof ['a', 'b', 'c']);
+// object
+console.log(typeof new Date());
 
-if(name === "Smith"){
-    alert("well done")
-} else{
-    return alert("wrong")
+
+//Conditional If..then. if a is true then it is a 4 if it is not it is a 3, of if it has a value then that value if not put the default 3 
+// a = 4
+const a = true ? 4 : 3;
+// a = 3
+const b = false ? 4 : 3;
+
+//// 20
+console.log(+'13' + 7); //it is a parse int, you put the plus befre the 13 to convert it string- number
+// 137
+console.log('13' + 7);
+
+const str1 = 'Hola';
+const str2 = 'todos';
+const str = `${str1} a ${str2}`;
+// Hola a todos
+console.log(str); //put a group that comjoins the two elements instead of having to do the conversion in the console
+
+//make hello world show up on the browser
+document.write ("hello world escrito en el body")
+
+
+//. Mostrar por pantalla la expresión 2*3 como texto. 
+var str7 = ('2'*3) //between a string and a number you can multiply, not works with +
+document.write(str7)
+
+//3. Mostrar por pantalla el resultado de la expresión 2*3.
+
+var numero9 = ("2*3")
+document.write(numero9)
+
+
+//another conditional, if this, then do this action, only make that console.log shows up if a is greater than b
+const a = 4;
+const b = 2;
+
+if (a > b) {
+console.log(`a (${a}) es mayor que b (${b})`);
 }
 
+//ELSE IF> THE DIFFERENT OPTIONS, IF IT IS NOT BIGGER THE SENCOND COMES UP, IN THIS CASE
+//ON THE CONSOLE, the first one is the true so it will be realised4v
+const a = 4;
+const b = 2;
+if (a > b) {
+console.log(`a (${a}) es mayor que b (${b})`);
+}
+else if (a < b) {
+console.log(`b (${b}) es mayor que b (${a})`);
+}
+else if (a === b)  
+{
+console.log(`b (${b}) es igual y posee el mismo tipo que b (${a})`);
     </script>
+}
     
+//else if and just else 
+2 //if the two aren't true then the else if another condition appears you didn't account for, else does not inlude a condition, it includes 
+//all the conditions you did not account for in the two first conditions you could say in the else, none of the conditions were met. 
+const a = 4;
+const b = 2;
+if (a > b) {
+console.log(`a (${a}) es mayor que b (${b})`);
+}
+else if (a < b) {
+console.log(`b (${b}) es mayor que b (${a})`);
+}
+else {
+console.log(`b (${b}) es igual que b (${a})`);
+
+
+4.3 >= 4 //true
+1 == 2 // false
+4 < 4 //false
+2 !== 5 // true
+5 == '5' //true
+5 === '5' //false
+5 == 5 //true
+5 === 5 //true
+
+
+
 </body>
 </html>
+}

@@ -185,17 +185,16 @@ console.log (d); //(11)
 document.write ("hello world escrit en el body")
 
 
-
 //. Mostrar por pantalla la expresión 2*3 como texto. 
-var str7 = "2*3"
+var str7 = ('2'*3)
 
-document.write("2*3")
+document.write(str7)
 
 //3. Mostrar por pantalla el resultado de la expresión 2*3.
 
 var numero9 = 2*3
 
-document.write (2*3)
+document.write(numero9)
 
 //Ejercicio 3: realiza la siguientes conversiones entre variables de diferente tipo:
 //1. De string a number.
@@ -214,6 +213,24 @@ console.log(parseInt (v1));//v1 is a string to a number
 console.log(v2.toString()); //v2 is a number to a string
 console.log(Boolean(v3)); //v3 is a boleano to a string
 
+
+
+//Conditional If..then. if a is true then it is a 4 if it is not it is a 3, of if it has a value then that value if not put the default 3 
+// a = 4
+const a = true ? 4 : 3;
+// a = 3
+const b = false ? 4 : 3;
+
+//// 20
+console.log(+'13' + 7); //it is a parse int, you put the plus befre the 13 to convert it string- number
+// 137
+console.log('13' + 7);
+
+const str1 = 'Hola';
+const str2 = 'todos';
+const str = `${str1} a ${str2}`;
+// Hola a todos
+console.log(str); //put a group that comjoins the two elements instead of having to do the conversion in the console
 
 let name = ''
 console.log(prompt(name))
