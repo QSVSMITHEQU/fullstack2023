@@ -44,20 +44,20 @@
 //then compare the greatest one of the two with numbre 1, no point comparing the small one of this condition to 1
 //if true then compare the numbet to to number one, if it is false compare the number 3 with number 1 S
 
-// const a = 4;
-// switch (a) {
-// case 1:
-// console.log('El valor de a es 1');
-// break;
-// case 2:
-// console.log('El valor de a es 2');
-// break;
-// case 3,4:
-// console.log('El valor de a es 3 ó 4');
-// break;
-// default:
-// console.log('El valor de a es desconocido');
-// } //default if none of the other cases are done
+ const a = 4;
+ switch (a) {
+ case 1:
+ console.log('El valor de a es 1');
+ break;
+ case 2:
+ console.log('El valor de a es 2');
+ break;
+ case 3,4:
+ console.log('El valor de a es 3 ó 4');
+ break;
+ default:
+ console.log('El valor de a es desconocido');
+ } //default if none of the other cases are done
 
 const dia="lunes";  
 switch (dia) {
@@ -184,3 +184,77 @@ for(let i=50; i>=1; i--) {
 for(let i=0; <=10; i++) {
     document.write("5 x" +i+ " = " +i*5+"<br>" ) //skip a line, timsing 5 x i (up to 10) and you get 5 multiples until 5 times 10. text what will show,  multiply, 5 x (number 1-10 =i)=
 }
+
+//ex.11 from page 171 Ejercicio 11: escribe un programa que pida al usuario un número entero positivo
+//(mediante la función prompt) y muestre por pantalla la cuenta atrás desde ese número
+//hasta cero, utilizando comas como separación.
+
+let wholEnum =prompt ("Escribe un numero entero positivo");
+
+for(let i=wholEnum ; i>=0; i--)
+if(i>0) {
+document.write(i + ",");
+}
+else {
+document.write (i);
+}
+
+//shows on screen 5,4,3,2,1,0 
+
+//while, while condition is being done, fo these actions while (variable condition action ++)
+// while
+
+//do while
+let contador2=0;
+do {
+  contador2++;  
+} while (contador2 <=5);
+
+/////
+let contador1 = 0;
+while (contador1 <= 5) {
+contador1++;
+}
+console.log(contador1); //shows 6
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//do 11,10,9, 8 con while 
+//8// numeros 1-50
+let numero4=0
+while (numero4 <=50); {
+console.log(numero4);
+numero4++;
+}
+
+
+//Ejercicio 9: escribe un programa que imprima toda la tabla de multiplicar del 5 (desde 0  hasta 10).
+//with let
+
+let numero6=0
+while (numero6 <=10) { 
+document.write("5 x" +numero6+ " = " +numero6*5+"<br>" );
+ numero6++;
+}
+
+
+//ex. 10 Ejercicio 10: escribe un programa que pida al usuario una palabra (mediante la función prompt) y lo muestre por pantalla 10 veces.
+
+let palabra8=prompt
+while ("palabra8" ) {
+    document.write 
+}
+
+
+//Ejercicio 11: escribe un programa que pida al usuario un número entero positivo (mediante la función prompt) y muestre por pantalla la cuenta atrás desde ese número hasta cero, utilizando comas como separación.
+
+let wholEnum =prompt ("Escribe un numero entero positivo");
+while (wholEnum >=0) {
+    if(wholEnum>0) {
+        document.write(wholEnum + ",");
+        }
+        else {
+        document.write (wholEnum);
+        }
+    wholEnum--;
+}
+
