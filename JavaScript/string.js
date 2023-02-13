@@ -213,7 +213,7 @@ console.log(coches.splice(3,1, "ferrari", "coche5"))
 arrays quieran ser concatenados.
 const myGirls = ['Cecilie', 'Lone'];
 const myBoys = ['Emil', 'Tobias', 'Linus'];
-const myChildren = myGirls.concat(myBoys);
+const myChildren = myGirls.concat(myBoys)
 // ["Cecilie", "Lone", "Emil", "Tobias", "Linus"]
 console.log(myChildren);
 
@@ -234,7 +234,7 @@ for (let i = 0; i<6, i++) {
 
 
     for (let i = 0; i<6, i++) { //the floor, makes it so that decimals are not included, 0.4 is just 0 
-        edades=edades.push(math.floor); 
+        edades=edades.push(mathfloor ); 
        } //math random element still didn't go over .
    
         

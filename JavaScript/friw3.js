@@ -27,10 +27,10 @@ const array4 = ["4", "6", "1", "3"]
 let emptyarray []; 
 let contador = 0 
 
-for(slice )
+for(slice)
 
 for (let i = 0; i<6, i++) {
- console.log(1,2 "4", "6", "1", "3") edades.push(i); 
+ console.log(array4.push(1,2, "4", "6", "1", "3")) edades.push(i); 
    }
 
    array 
